@@ -1,21 +1,27 @@
-function calcularArea(forma, parametros){
-	this.Triangulo = function(base, altura){
-		return (base * altura)/2;
-	}	
-}
 
-var forma = 1;
-var base = 2;
-var altura = 5;
-var calcularArea = new calcularArea();
+console.log("MENU");
+console.log("1. Triangulo");
+console.log("2. Rectangulo");
+console.log("3. Circulo");
+var parametros= [5,10];
+var menu = 1;
 
-if (forma == 1){
-	console.log("Area de Triangulo: ", calcularArea.Triangulo(base, altura));
-}
+function areaTriangulo(parametros){
+	return (parametros[0]*parametros[1])/2;}
+function areaRectangulo(parametros){
+	return (parametros[0]* parametros[1]);}
+function areaCirculo(parametros){
+	return (Math.pow(parametros[0], 2)*Math.PI);}
 
-//function areaRectangulo(base, altura){
-//	return (base* altura);
-//}
-//function areaCirculo(base){
-//	return (Math.pow(base, 2)*Math.PI);
-//}
+if(menu = 1){
+	var calculo = areaTriangulo;}
+else if(menu = 2){
+	var calculo = areaRectangulo;}
+else if(menu = 2){
+	var calculo = areaRectangulo;}
+
+
+function calcularArea(calculo, parametros) {
+	return calculo(parametros);}
+
+console.log(calcularArea(calculo,parametros));	
