@@ -37,3 +37,16 @@ function render(mountPoint, component, state){
 var root= document.getElementById("root");
 render(root, Cuadradocirculo, {x: 10, y:20});
 	
+
+
+setInterval(function(){
+	render(root, Cuadradocirculo, {
+		x: i%800,
+		y: 100*Math.sin(i*Math.PI/200)+100,
+		color:"purple",
+		size:30,
+		text:"jajaja"
+	});
+	i++;
+
+},10);
