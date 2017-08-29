@@ -30,16 +30,17 @@ function Cuadradocirculo(position){
 
 }
 function render(mountPoint, component, state){
+	mountPoint.innerHTML= "";
 	mountPoint.appendChild(component(state));
 }
 
 
 var root= document.getElementById("root");
-render(root, Cuadradocirculo, {x: 10, y:20});
+//render(root, Cuadradocirculo, {x: 10, y:20});
 	
-
-
-setInterval(function(){
+var i = 0;
+var btnNext= document.getElementById("next");
+btnNext.onclick = function(){
 	render(root, Cuadradocirculo, {
 		x: i%800,
 		y: 100*Math.sin(i*Math.PI/200)+100,
@@ -47,6 +48,5 @@ setInterval(function(){
 		size:30,
 		text:"jajaja"
 	});
-	i++;
-
-},10);
+	i+=3;
+}
