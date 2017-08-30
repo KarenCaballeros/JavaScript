@@ -1,0 +1,39 @@
+.cuadro{
+	border: 2px dashed black;
+	height: 340px;
+	position: relative;
+	width: 120px;
+}
+.circulo1{
+	background: white;
+	border-radius: 100%;
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	left :10px;
+	top:10px;
+	border: 1px dashed black;
+
+}
+.circulo2{
+	background: white;
+	border-radius: 100%;
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	left :10px;
+	top:120px;
+	border: 1px dashed black;
+
+}
+.circulo3{
+	background: white;
+	border-radius: 100%;
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	left : 10px;
+	top:230px;
+	border: 5px;
+	border: 1px dashed black;
+}
